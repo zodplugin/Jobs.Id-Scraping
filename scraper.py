@@ -23,7 +23,6 @@ driver.find_element(By.XPATH,"/html/body/section[2]/div[2]/div[2]/div/div/div/di
 time.sleep(5)
 
 results = driver.find_elements(By.XPATH,'//*[@id="job-ads-container"]/div')
-print(results)
 for result in results:
     title = result.find_element(By.XPATH,'.//h3').text
     perusahaan = result.find_element(By.XPATH,'.//p[1]/a').text
